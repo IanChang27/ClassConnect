@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Georama, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #1D212C;
+}
+
+h1 {
+    font-size: 29px;
+    color: rgb(255, 255, 255);
+    font-family: Georama, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.assignment-details-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-details {
+    margin-bottom: 20px;
+}
+
+.assignment-details h2 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.assignment-details p {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.materials-list, .time-required {
+    margin-bottom: 20px;
+}
+
+.materials-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.materials-list ul li {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: rgb(0, 4, 82);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.topnav {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    background-color: #050E2E;
+    padding: 20px 20px;
+    padding-left: 0px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.topnav li {
+    text-align: center;
+    display: inline;
+}
+
+.topnav li a {
+    font-size: 17px;
+    text-align: center;
+    padding: 20px 18px;
+    color: rgb(246 247 249);
+    font-family: Georama, sans-serif;
+}
+
+.topnav-active {
+    background-color: #FF9232;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: white;
+    color: black;
+}

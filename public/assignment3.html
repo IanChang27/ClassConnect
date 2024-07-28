@@ -2,107 +2,60 @@
 <html>
 
 <head>
-    <title> SchoolDex </title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Georama, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            background-color: #1D212C;
-
-        }
-
-        h1 {
-
-            font-size: 29px;
-            color: rgb(255, 255, 255);
-            font-family: Georama, sans-serif;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .assignment-details-container {
-            width: 80%;
-            max-width: 800px;
-            background-color: rgb(255, 255, 255);
-            border: 1px solid white;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .assignment-details {
-            margin-bottom: 20px;
-        }
-
-        .assignment-details h2 {
-            font-size: 24px;
-            color: rgb(0, 0, 0);
-            margin-bottom: 10px;
-        }
-
-        .assignment-details p {
-            font-size: 16px;
-            color: rgb(0, 0, 0);
-            margin-bottom: 10px;
-        }
-
-        .materials-list,
-        .time-required {
-            margin-bottom: 20px;
-        }
-
-        .materials-list ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .materials-list ul li {
-            font-size: 16px;
-            color: rgb(0, 0, 0);
-            margin-bottom: 5px;
-        }
-
-        .back-link {
-            text-decoration: none;
-            color: rgb(0, 4, 82);
-            font-size: 16px;
-            margin-top: 20px;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignements</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="stylesheets/assignments3Style.css" />
 </head>
 
 <body>
+    <div>
+        <ul class="topnav">
+            <li><a href="/" style="text-decoration: none; color: rgb(red, green, blue);">Home</a></li>
+            <li><a href="courses.html" style="text-decoration: none; color: rgb(red, green, blue);">Courses</a></li>
+            <li><a href="assignments.html" style="text-decoration: none; color: rgb(red, green, blue);">Assignments</a></li>
+            <li><a href="resources.html" style="text-decoration: none; color: rgb(red, green, blue);">Resources</a></li>
+            <li><a href="fun_game.html" style="text-decoration: none; color: rgb(red, green, blue);">Fun Quiz</a></li>
+            <li><a href="classchat.html" style="text-decoration: none; color: rgb(red, green, blue);">Class Chat</a></li>
+            
+        </ul>
+    </div>
     <h1>Assignment Details</h1>
     <div class="assignment-details-container">
         <div class="assignment-details">
             <h2>History Essay</h2>
-            <p><strong>Task:</strong> Write a 1,500 word essay about what you believe were the major factors in the fall of the Roman Empire. Make sure to use clear evidence, and counterclaims to your beliefs.
-        <div class="materials-list">
-            <h3>Materials Needed</h3>
-            <ul>
-                <li>Computer with Internet Access<li\>
-                <li>Notes<li\>
-                <li>Pencil/Pen<li\>
-            <ul\>
-        </div>
-        <div class="time-required">
-            <h3>Time Required</h3>
-            <p>Maximum time allowed: 5.5 hours</p>
-        </div>
-        <div class="how-to-submit">
-            <h3>How to submit</h3>
-            <p>Email your test to iansloan200@gmail.com by August 12th at 11:59 PM EST. </p>
-            <div>
+            <p><strong>Task:</strong> Write a 1,500 word essay about what you believe were the major factors in the fall
+                of the Roman Empire. Make sure to use clear evidence, and counterclaims to your beliefs.
+            <div class="materials-list">
+                <h3>Materials Needed</h3>
+                <ul>
+                    <li>Computer with Internet Access<li\>
+                    <li>Notes<li\>
+                    <li>Pencil/Pen<li\>
+                            <ul\>
             </div>
-            <a href="assignments.html" class="back-link">Back to Assignments</a>
+            <div class="time-required">
+                <h3>Time Required</h3>
+                <p>Maximum time allowed: 5.5 hours</p>
+            </div>
+            <div class="how-to-submit">
+                <h3>How to submit</h3>
+                <p> Submit your essay as a PDF below. Your submission will be processed, and you will be sent to a screen of confirmation afterwards.</p>
+                <form id="uploadForm" action="/api/submitform" method="post" enctype="multipart/form-data">
+                    <label for="fileUpload">Upload PDF:</label>
+                    <input type = "file" id = "fileUpload" name = "fileUpload" accept=".pdf" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('beforeunload', function() {
+                document.getElementById('uploadForm').reset();
+            });
+        </script>
 </body>
-
 </html>
+
+
+            

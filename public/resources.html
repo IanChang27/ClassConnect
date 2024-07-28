@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheets/coursesStyle.css" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/resourcesStyle.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Resources</title>
       <script src="javascript/search.js" defer></script>
 
 </head>
@@ -26,21 +27,19 @@
             <li><a href="courses.html" style="text-decoration: none; color: rgb(red, green, blue);">Courses</a></li>
             <li><a href="assignments.html" style="text-decoration: none; color: rgb(red, green, blue);">Assignments</a></li>
             <li><a class="topnav-active"href="resources.html" style="text-decoration: none; color: rgb(red, green, blue);">Resources</a></li>
+            <li><a href="fun_game.html" style="text-decoration: none; color: rgb(red, green, blue);">Fun Quiz</a></li>
             <li><a href="classchat.html" style="text-decoration: none; color: rgb(red, green, blue);">Class Chat</a></li>
         </ul>
     </div>
     <h1>Search your resources</h1>
        
         <br>
-            <input id="searchbar" onkeyup="search_sources()" type="text" name="search">
-            <ul id="list-holder" style="color: white;">
+            <input id="searchbar" class="searchbar" onkeyup="search_sources()" type="text" name="search">
+            <div class="list">
+                <ul class="list-holder"id="list-holder" style="color: white;">
+            </div>
 
 </ul>
-        <br>
-
-        <a href="/" class="back-link">Back to Home</a>
-
-
 
 </body>    
     

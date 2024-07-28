@@ -1,74 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
-/*
-This is a bigger mess
-*/
-
-body {
-
+body{
     margin: 0;
     font-family: Georama, sans-serif;
     display: flex;
     flex-direction: column;
+    padding-top: 0;
     background-color: #1D212C;
 }
 
-h1 {
-
+h1{
     font-size: 29px;
     color: rgb(246 247 249);
     font-family: Georama, sans-serif;
     text-align: center;
-    margin-top: 20px;
-
+    margin-top: 50px;
+}
+h2{
+    color: rgb(246 247 249);
 }
 
-.assignments-container {
-
-    margin-left: auto;
-    margin-right: auto;
+.courses-container {
     width: 80%;
     max-width: 800px;
-    margin-top: 20px;
-
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
-
-.assignment {
-
+.course{
     background-color: #FF9232;
-    border: 1px;
-    border-radius: 5px;
+    padding-top: 5x;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-right: auto;
+    padding: 22px;
+    align-items: center;
+    margin-left: auto;
     padding: 15px;
+    margin-top: 15px;
     margin-bottom: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.assignment h2 {
-
+.course h2, .course h3{
     font-size: 20px;
-    color: #050E2E;
+    color: rgb(246 247 249);
     margin: 0 0 10px;
-
 }
 
-
-.assignment p {
-
-    font-size: 20px;
-    color: #050E2E;
-    margin: 0;
-}
-
-.assignment a {
+.course a {
+    text-decoration: none;
+    color: rgb(246 247 249);
+    font-size: 16px;
     display: block;
     margin-top: 10px;
-    font-size: 14px;
-    color: #050E2E;
-    text-decoration: none;
 }
 
-.assignment a:hover {
+.course a:hover {
     text-decoration: underline;
+}
+
+a {
+    color: white;
 }
 
 .topnav {
@@ -107,4 +101,34 @@ h1 {
 .topnav a.active {
     background-color: white;
     color: black;
+}
+.EVERYTHINGELSE {
+    align-items: center;
+    padding-left: auto;
+    padding-right: auto;
+    padding: 22px;
+}
+
+.searchbar {
+    font-size: 15px;
+    height: 33px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+}
+
+.list {
+    background-color: rgb(255, 255, 255);
+    overflow: scroll;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    width:80%;
+    height:300px;
+    border-radius: 8px;
+}
+.list ul li {
+    color:black;
 }

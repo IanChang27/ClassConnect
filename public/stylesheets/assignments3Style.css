@@ -1,73 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
-/*
-This is a bigger mess
-*/
-
 body {
-
     margin: 0;
     font-family: Georama, sans-serif;
     display: flex;
     flex-direction: column;
     background-color: #1D212C;
+
 }
 
 h1 {
 
     font-size: 29px;
-    color: rgb(246 247 249);
+    color: rgb(255, 255, 255);
     font-family: Georama, sans-serif;
     text-align: center;
     margin-top: 20px;
-
 }
 
-.assignments-container {
-
+.assignment-details-container {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     max-width: 800px;
-    margin-top: 20px;
-
-}
-
-
-.assignment {
-
-    background-color: #FF9232;
-    border: 1px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
     border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.assignment h2 {
-
-    font-size: 20px;
-    color: #050E2E;
-    margin: 0 0 10px;
-
+.assignment-details {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-.assignment p {
-
-    font-size: 20px;
-    color: #050E2E;
-    margin: 0;
+.assignment-details h2 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
 }
 
-.assignment a {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #050E2E;
+.assignment-details p {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.materials-list,
+.time-required {
+    margin-bottom: 20px;
+}
+
+.materials-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.materials-list ul li {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+
+.back-link {
     text-decoration: none;
+    color: rgb(0, 4, 82);
+    font-size: 16px;
+    margin-top: 20px;
 }
 
-.assignment a:hover {
+.back-link:hover {
     text-decoration: underline;
 }
 

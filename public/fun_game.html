@@ -6,19 +6,31 @@
     <meta name="viewport" content = "width=device-width", initial scale="1">
     <title>Fun Class Quiz</title>
     <script src="javascript/fun_game.js" defer></script>
-    <style>
-        body {font-family: Georama, sans-serif; padding: 20px; text-align: center; }
-        #question-container {margin: 20px; }
-        .choice {display: block; padding: 10px; margin: 11px; cursor: pointer; background-color: rgb(55, 122, 209);}
-        .choice:hover {background-color: rgb(92, 191, 34);}
-    </style>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="stylesheets/fun_gameStyle.css" />
+
 </head>
 <body>
+    <ul class="topnav">
+        <li><a href="/" style="text-decoration: none; color: rgb(red, green, blue);">Home</a></li>
+        <li><a href="courses.html" style="text-decoration: none; color: rgb(red, green, blue);">Courses</a></li>
+        <li><a href="assignments.html" style="text-decoration: none; color: rgb(red, green, blue);">Assignments</a></li>
+        <li><a href="resources.html" style="text-decoration: none; color: rgb(red, green, blue);">Resources</a></li>
+        <li><a class="topnav-active"href="fun_game.html" style="text-decoration: none; color: rgb(red, green, blue);">Fun Quiz</a></li>
+        <li><a href="classchat.html" style="text-decoration: none; color: rgb(red, green, blue);">Class Chat</a></li>
+    </ul>
     <h1>Fun Class Quiz</h1>
+    <p>Welcome to the fun quiz! Try your best, and have fun!</p>
     <div id="question-container">
         <button id="begin-button" onclick="loadNextQuestion()">Start Quiz</button>
         <div id="Questionstuff"></div>
+
     </div>
+
+    <script>
+        const button = document.createElement('button');
+    </script>
+
 </body>
 </html>
 

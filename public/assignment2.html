@@ -2,92 +2,34 @@
 <html>
 
 <head>
-    <title> SchoolDex </title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Georama, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            background-color: #1D212C;
-            
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="stylesheets/assignments2Style.css" />
 
-        }
-
-        h1 {
-
-            font-size: 29px;
-            color: rgb(255, 255, 255);
-            font-family: Georama, sans-serif;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .assignment-details-container {
-            width: 80%;
-            max-width: 800px;
-            background-color: rgb(255, 255, 255);
-            border: 1px solid rgb(255, 255, 255);
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .assignment-details {
-            margin-bottom: 20px;
-        }
-
-        .assignment-details h2 {
-            font-size: 24px;
-            color: rgb(0, 0, 0);
-            margin-bottom: 10px;
-        }
-
-        .assignment-details p {
-            font-size: 16px;
-            color: rgb(0, 0, 0);
-            margin-bottom: 10px;
-        }
-
-        .materials-list,
-        .time-required {
-            margin-bottom: 20px;
-        }
-
-        .materials-list ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .materials-list ul li {
-            font-size: 16px;
-            color: rgb(0, 0, 0);
-            margin-bottom: 5px;
-        }
-
-        .back-link {
-            text-decoration: none;
-            color: rgb(0, 4, 82);
-            font-size: 16px;
-            margin-top: 20px;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 
 <body>
+    <div>
+        <ul class="topnav">
+            <li><a href="/" style="text-decoration: none; color: rgb(red, green, blue);">Home</a></li>
+            <li><a href="courses.html" style="text-decoration: none; color: rgb(red, green, blue);">Courses</a></li>
+            <li><a href="assignments.html" style="text-decoration: none; color: rgb(red, green, blue);">Assignments</a></li>
+            <li><a href="resources.html" style="text-decoration: none; color: rgb(red, green, blue);">Resources</a></li>
+            <li><a href="fun_game.html" style="text-decoration: none; color: rgb(red, green, blue);">Fun Quiz</a></li>
+            <li><a href="classchat.html" style="text-decoration: none; color: rgb(red, green, blue);">Class Chat</a></li>
+            
+        </ul>
+    </div>
     <h1>Assignment Details</h1>
     <div class="assignment-details-container">
         <div class="assignment-details">
             <h2>Investigating Linear Equations and Graphs</h2>
             <p><strong>Task:</strong> Using what knowledge you have, solve the following equation: You are tasked with
                 analyzing and comparing two different mobile phone plans. Plan A charges a fixed monthly fee of $30 plus
-                $0.15 per text message. Plan B charges a fixed monthly fee of $20 plus $0.20 per text message. If you send less than 200 messages, which plan
+                $0.15 per text message. Plan B charges a fixed monthly fee of $20 plus $0.20 per text message. If you
+                send less than 200 messages, which plan
                 will save you more money? Show all your work.
         </div>
         <div class="materials-list">
@@ -96,7 +38,7 @@
                 <li>Notebook<li\>
                 <li>Number 2 Pencil<li\>
                 <li>Eraser<li\>
-            <ul\>
+                        <ul\>
         </div>
         <div class="time-required">
             <h3>Time Required</h3>
@@ -104,10 +46,18 @@
         </div>
         <div class="how-to-submit">
             <h3>How to submit</h3>
-            <p>Take a picture of your test and email it to suyash.tan@gmail.com by August 5th, 9 PM EST. </p>
-            <div>
-            </div>
-            <a href="assignments.html" class="back-link">Back to Assignments</a>
+            <p>Upload a picture of your answer as a PDF using the form below. Your submission will be processed, and you will get a confirmation once it is successfully uploaded.</p>
+            <form id="uploadForm" action="/api/submitform" method="post" enctype="multipart/form-data">
+                <label for="fileUpload">Upload PDF:</label>
+                <input type="file" id="fileUpload" name="fileUpload" accept=".pdf" required>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('beforeunload', function() {
+            document.getElementById('uploadForm').reset();
+        });
+    </script>
 </body>
-
 </html>

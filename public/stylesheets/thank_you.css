@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Georama, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #1D212C;
+}
+.topnav {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    background-color: #050E2E;
+    padding: 20px 20px;
+    padding-left: 0px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.topnav li {
+    text-align: center;
+    display: inline;
+}
+
+.topnav li a {
+    font-size: 17px;
+    text-align: center;
+    padding: 20px 18px;
+    color: rgb(246 247 249);
+    font-family: Georama, sans-serif;
+}
+
+.topnav-active {
+    background-color: #FF9232;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: white;
+    color: black;
+}

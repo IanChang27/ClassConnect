@@ -25,7 +25,7 @@ const questions =[
         topic: "Math",
         question: "What's the solution to this quadratic equation: x^2 + 12x + 36 = 0?",
         choices: ["x = 2 or x = 6", "x = -6 or x = -6", "x = 6 or x = 3", "x = 12 or x = 3"],
-        answer: "x = 6 or x = 6"
+        answer: "x = -6 or x = -6"
 
     },
 
@@ -125,12 +125,12 @@ function showFinalScore() {
 
     const button = document.createElement('button');
     button.textContent = 'Home Button';
-    button.style.marginTop = '22px';
     button.style.padding = '11px 22px'; 
+    button.style.alignItems = 'center';
     button.style.cursor = 'pointer';
     button.style.fontSize = '20px';
     button.addEventListener('click', () => {
-        window.location.href = 'index.html'; 
+        window.location.href = '/'; 
     });
     container.appendChild(button);
 }

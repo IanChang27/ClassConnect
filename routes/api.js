@@ -8,25 +8,29 @@ const { rateLimit } = require("express-rate-limit");
 const bodyParser = require("body-parser");
 router.use(bodyParser.json())
 const limiter = rateLimit({
-    windowMs: 5 * 60 * 1000, // 5 minutes
-    limit: 10, // each IP can make up to 10 requests per `windowsMs` (5 minutes)
-    standardHeaders: true, // add the `RateLimit-*` headers to the response
-    legacyHeaders: false, // remove the `X-RateLimit-*` headers from the response
+    windowMs: 5 * 60 * 1000, 
+    limit: 10, 
+    standardHeaders: true, 
+    legacyHeaders: false,
+  });
+  const limiter2 = rateLimit({
+    windowMs: 5 * 60 * 1000, 
+    limit: 100, 
+    standardHeaders: true, 
+    legacyHeaders: false,
   });
 router.get("/", function (req, res, next) {
     res.send("OK");
 });
-router.get("/chatmessage",limiter, (req, res) => {
+router.get("/chatmessage",limiter2, (req, res) => {
     (async () => {
         const getallmessages = await chatSchema.find();
-        console.log(getallmessages)
         res.json(getallmessages)
     })();
 })
 
 router.post("/sendmessage",limiter, (req, res) => {
     (async () => {
-        console.log(req)
         let newmessage = new chatSchema({
             _id: new mongoose.Types.ObjectId(),
             name: req.body.name,
@@ -37,6 +41,10 @@ router.post("/sendmessage",limiter, (req, res) => {
             success: true
         })
     })();
+})
+
+router.post("/submitform", limiter, (req, res) => {
+    res.redirect("/thank_you.html")
 })
 
 module.exports = router;
