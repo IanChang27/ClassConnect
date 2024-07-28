@@ -8,153 +8,113 @@ body{
     background-color: #1D212C;
 }
 
-h1{
-    font-size: 29px;
-    color: rgb(246 247 249);
-    font-family: Georama, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-}
-h2{
-    color: rgb(246 247 249);
-}
-
-.courses-container {
-    width: 50%;
-    max-width: 800px;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-}
-
-.course{
-    background-color: #FF9232;
-    padding-top: 5x;
-    border: 1px solid white;
-    border-radius: 15px;
-    margin-right: auto;
-    padding: 22px;
-    align-items: center;
-    margin-left: auto;
-    padding: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.course h2, .course h3{
-    font-size: 20px;
-    color: rgb(246 247 249);
-    margin: 0 0 10px;
-}
-
-.course a {
-    text-decoration: none;
-    color: rgb(246 247 249);
-    font-size: 16px;
-    display: block;
-    margin-top: 10px;
-}
-
-.course a:hover {
-    text-decoration: underline;
-}
-
-a {
-    color: white;
+header {
+    width: 100%;
 }
 
 .topnav {
-    display: flex;
-    list-style-type: none;
-    text-align: center;
-    background-color: #050E2E;
-    padding: 20px 20px;
-    padding-left: 0px;
+    width: 100%;
+    background-color: #050E2E; /* Background color */
     overflow: hidden;
-    margin: 0;
+    text-align: center; /* Centered text */
 }
 
-.topnav li {
-    text-align: center;
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centered navigation items */
+}
+
+.topnav ul li {
     display: inline;
 }
 
-.topnav li a {
-    font-size: 17px;
+.topnav ul li a {
+    display: inline-block;
+    color: #F6F7F9; /* Text color */
     text-align: center;
-    padding: 20px 18px;
-    color: rgb(246 247 249);
-    font-family: Georama, sans-serif;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-.topnav-active {
-    background-color: #FF9232;
+.topnav ul li a:hover, .topnav ul li a.topnav-active {
+    background-color: #FF9232; /* Active and hover state color */
+    color: black; /* Text color on hover */
 }
 
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+main {
+    text-align: center;
+    padding: 20px;
 }
 
-.topnav a.active {
-    background-color: white;
-    color: black;
-}
-.EVERYTHINGELSE {
-    align-items: center;
-    padding-left: auto;
-    padding-right: auto;
-    padding: 22px;
+h1 {
+    font-size: 36px; /* Increased font size */
+    margin-top: 20px;
 }
 
 p {
-    color: rgb(246 247 249);
     font-size: 20px;
-    text-align: center;
 }
 
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centered content */
+    margin-top: 20px;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.yournamething, .textchat {
+    width: 80%; /* Adjusted width */
+    max-width: 600px; /* Maximum width */
+    padding: 10px; /* Padding for better spacing */
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.sendbutton {
+    padding: 10px 20px; /* Padding for better spacing */
+    font-size: 18px;
+    color: white;
+    background-color: #FF9232; /* Button color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.sendbutton:hover {
+    background-color: #e67e22; /* Hover state color */
+}
 
 .textbox {
-    color: rgb(0, 0, 0);
-    font-family: Georama, sans-serif;
-    font-size: 20px;
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 30px;
-    align-items: center;
+    width: 80%; /* Adjusted width */
+    max-width: 700px; /* Maximum width */
+    height: 400px;
+    background-color: white; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding for better spacing */
+    overflow-y: scroll; /* Scrollable content */
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
 }
 
-.textchat {
-    color: rgb(0, 0, 0);
-    font-family: Georama, sans-serif;
-    font-size: 20px;
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 30px;
-    align-items: center;
+.back-link {
+    font-size: 18px;
+    color: #FF9232;
+    text-decoration: none;
 }
 
-.yournamething { 
-    color: rgb(0, 0, 0);
-    font-family: Georama, sans-serif;
-    font-size: 20px;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 20px;
-    align-items: center;
-}
-.sendbutton {
-    color: rgb(0, 0, 0);
-    font-family: Georama, sans-serif;
-    font-size: 20px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 20px;
-    align-items: center;
+.back-link:hover {
+    text-decoration: underline;
 }

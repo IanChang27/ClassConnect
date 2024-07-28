@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheets/classchatStyle.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Class Chat!</title>
       <script src="javascript/messageSystem.js" defer></script>
 </head>
@@ -21,20 +20,21 @@
             <li><a href="courses.html" style="text-decoration: none; color: rgb(red, green, blue);">Courses</a></li>
             <li><a href="assignments.html" style="text-decoration: none; color: rgb(red, green, blue);">Assignments</a></li>
             <li><a href="resources.html" style="text-decoration: none; color: rgb(red, green, blue);">Resources</a></li>
-            <li><a href="fun_game.html" style="text-decoration: none; color: rgb(red, green, blue);">Fun Quiz</a></li>
             <li><a class="topnav-active"href="classchat.html" style="text-decoration: none; color: rgb(red, green, blue);">Class Chat</a></li>
         </ul>
     </div>
     <h1>Class Chat!</h1>
     <p>Chat with your class!</p>
-    <div class="chat-container">
-        <label for ="name">Name:</label>
-        <label class="yournamething" id="name" type="text" name="your name"
-        <label for="textchat">Message:</label>
-        <input class="textchat" id="textchat" type="text" name="chattext">
-        <button class="sendbutton" id="sendbutton" onclick="sendMessage()">Send</button>
-        <div class="textbox" id="chatbox"></div>
-    </div>
+        <div class="chat-container">
+            <label for="name">Name:</label>
+            <textarea class="yournamething" id="name" name="yourname" placeholder="Enter your name"></textarea>
+            <label for="textchat">Message:</label>
+            <textarea class="textchat" id="textchat" name="chattext" placeholder="Enter your message"></textarea>
+            <button class="sendbutton" id="sendbutton" onclick="sendMessage()">Send</button>
+            <div class="textbox" id="chatbox"></div>
+        </div>
+        <br>
+        <a href="/" class="back-link">Back to Home</a>
+    </main>
 </body>
 </html>
-    
