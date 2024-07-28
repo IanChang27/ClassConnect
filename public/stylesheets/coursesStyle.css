@@ -4,8 +4,7 @@ body{
     font-family: Georama, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 22px;
+    padding-top: 0;
     background-color: #1D212C;
 }
 
@@ -23,6 +22,9 @@ h2{
 .courses-container {
     width: 80%;
     max-width: 800px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
 }
 
@@ -31,6 +33,10 @@ h2{
     padding-top: 5x;
     border: 1px solid white;
     border-radius: 15px;
+    margin-right: auto;
+    padding: 22px;
+    align-items: center;
+    margin-left: auto;
     padding: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -59,23 +65,22 @@ a {
     color: white;
 }
 
-
-
 .topnav {
     display: flex;
-    justify-content: flex-end;
-    margin-right: auto;
     list-style-type: none;
     text-align: center;
     background-color: #050E2E;
     padding: 20px 20px;
-    overflow:hidden;
+    padding-left: 0px;
+    overflow: hidden;
     margin: 0;
 }
+
 .topnav li {
     text-align: center;
     display: inline;
 }
+
 .topnav li a {
     font-size: 17px;
     text-align: center;
@@ -83,6 +88,7 @@ a {
     color: rgb(246 247 249);
     font-family: Georama, sans-serif;
 }
+
 .topnav-active {
     background-color: #FF9232;
 }
@@ -90,9 +96,15 @@ a {
 .topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
+}
+
 .topnav a.active {
-   background-color: white;
-   color: black;
+    background-color: white;
+    color: black;
+}
+.EVERYTHINGELSE {
+    align-items: center;
+    padding-left: auto;
+    padding-right: auto;
+    padding: 22px;
 }
