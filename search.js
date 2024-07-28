@@ -1,6 +1,6 @@
 // Purpose: This file is used to search for articles a based on the users input
 
-let jsonData = `[
+let sourceslist = `[
     {"Name": "Climate Change Research Article", "link": "https://www.nature.com/articles/s41558-020-00968-3"},
     {"Name": "Climate Change Mini Lesson", "link": "https://www.khanacademy.org/science/hs-biology/x4c673362230887ef:molecular-genetics/x4c673362230887ef:introduction-to-climate-change/a/hs-introduction-to-climate-change"},
     {"Name": "Molecular Biology Research Article", "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7144780/"},
@@ -13,7 +13,7 @@ let jsonData = `[
     {"Name": "Zoology Mini Lesson", "link": "https://www.khanacademy.org/science/physics"}
   ]`
   
-  let sources = JSON.parse(jsonData)
+  let sources = JSON.parse(sourceslist)
 
   function search_sources() {
     let input = document.getElementById('searchbar').value
