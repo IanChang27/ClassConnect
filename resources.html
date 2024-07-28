@@ -1,3 +1,4 @@
+<!-- THIS FILE SEARCHES THROUGH ALL THE SOURCES FOR ALL THE COURSES. I ONLY ADDED THE SCIENCE CLASS. ADD THE REST TO THE ARRAY IN SEARCH.JS -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="coursesStyle.css" />
     <title>Document</title>
+      <script src="search.js" defer></script>
+
 </head>
 <body>
     
@@ -25,20 +28,15 @@
             <li><a href="resources.html" style="text-decoration: none; color: rgb(red, green, blue);">AI Teacher Help</a></li>
         </ul>
     </div>
-    <h1>Courses</h1>
-        <div class="courses-container">
-            <div class="course"></div>
-            <h2>Science</h2>
-            <a href="course2.html">View Science Course</a>
-            <div class="course"></div>
-            <h2>Math</h2>
-            <a href="course3.html">View Math Course</a>
-            <div class="course"></div>
-            <h2>History</h2>
-            <a href="course4.html">View History Course</a>
-        </div>
+    <h1>Search your resources</h1>
+       
         <br>
+            <input id="searchbar" onkeyup="search_sources()" type="text" name="search">
+            <ul id="list-holder" style="color: white;">
+
+</ul>
         <br>
+
         <a href="index.html" class="back-link">Back to Home</a>
 
 
