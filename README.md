@@ -2,8 +2,8 @@
 ClassConnect is a proof of concept classroom portal that allows teachers to interact with students in a fun and user friendly way.
 
 ### Prerequisites
-Node.js
-MongoDB Cluster
+- Node.js
+- MongoDB Cluster
 
 
 ## How to Setup
