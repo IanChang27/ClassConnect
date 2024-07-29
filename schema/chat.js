@@ -7,4 +7,4 @@ const chatSchema = new Schema({
 })
 
 
-module.exports = model("cahat", chatSchema, "cagattt")
+module.exports = model("chat", chatSchema, "chat")
