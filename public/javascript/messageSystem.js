@@ -33,8 +33,8 @@ async function getMessages() {
     .then(data => {
         const MessagesContainer = document.getElementById("chatbox")
         MessagesContainer.innerText = ""
-        for (let i= data.length-1; i > 0; i--) {
-            MessagesContainer.innerText += `${data[i].name}: ${data[i].message}\n`
+        for (let i= data.length; i > 0; i--) {
+            MessagesContainer.innerText += `${data[i-1].name}: ${data[i-1].message}\n`
         }
     })
 }
